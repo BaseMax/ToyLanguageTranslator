@@ -2,7 +2,7 @@ package com.asrez;
 /**
  *
  * @Name : ToyLanguageTranslator
- * @File : com/asrez/ToyLanguageTranslator.java
+ * @File : com/asrez/RoamiLanguageTranslator.java
  * @Version : 1.0
  * @Programmer : Max
  * @Date : 2019-12-07
@@ -11,7 +11,7 @@ package com.asrez;
  * @Reference : https://github.com/BaseMax/ToyLanguageTranslator
  *
  **/
-public class LanguageInterpreter {
+public class RoamiLanguageTranslator {
     public static int checkCharType(char input) {
         if(Character.isAlphabetic(input)) {
             switch(Character.toLowerCase(input)) {
