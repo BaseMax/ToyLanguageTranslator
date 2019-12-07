@@ -33,7 +33,7 @@ Hey all, hello how are you knowledge!
 | toRomani   | Convert English text to Romani language | String |
 | toEnglish  | Convert Romani text to English language | String |
 | isValid    | Check a Romani text is valid or not | Boolean |
-| checkType  | Check one char, it's English vowels or other symbols | int |
+| checkCharType  | Check one char, it's English vowels or other symbols | int |
 
 ```
 public static int checkType(char input);
