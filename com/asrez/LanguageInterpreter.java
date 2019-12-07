@@ -62,6 +62,18 @@ public class LanguageInterpreter {
         return temp;
     }
 
+    public static String toRomani(String input) {
+        String temp="";
+        for(int i=0;i<input.length();i++) {
+            temp+=input.charAt(i);
+            if(checkType(input.charAt(i)) == 0) {
+                temp+='o';
+                temp+=input.charAt(i);
+            }
+        }
+        return temp;
+    }
+
     public static void main(String arguments[]) {
         try {
             System.out.println(toEnglish("HoHeyoy alollol, hohelollolo hohowow arore yoyou koknonowowloledodgoge!"));
@@ -69,5 +81,6 @@ public class LanguageInterpreter {
             e.printStackTrace();
         }
         System.out.println(isValid("HoHeyoy alollol, hohelollolo hohowow arore yoyou koknonowowloledodgoge!"));
+        System.out.println(toRomani("Hey all, hello how are you knowledge!"));
     }
 }
