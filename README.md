@@ -23,6 +23,25 @@ HoHeyoy alollol, hohelollolo hohowow arore yoyou koknonowowloledodgoge!
 Hey all, hello how are you knowledge!
 ```
 
+
+
+
+## Structure 
+
+|   Method   | Goal | Return Type |
+| ---------- | ---- | ------------ |
+| toRomani   | Convert English text to Romani language | String |
+| toEnglish  | Convert Romani text to English language | String |
+| isValid    | Check a Romani text is valid or not | Boolean |
+| checkType  | Check one char, it's English vowels or other symbols | int |
+
+```
+public static int checkType(char input);
+public static Boolean isValid(String input);
+public static String toEnglish(String input) throws Exception;
+public static String toRomani(String input);
+```
+
 ---------
 
 # Max Base
