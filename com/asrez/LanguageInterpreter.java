@@ -12,7 +12,7 @@ package com.asrez;
  *
  **/
 public class LanguageInterpreter {
-    public static int checkType(char input) {
+    public static int checkCharType(char input) {
         if(Character.isAlphabetic(input)) {
             switch(Character.toLowerCase(input)) {
                 case 'a':
@@ -31,7 +31,7 @@ public class LanguageInterpreter {
     public static Boolean isValid(String input) {
         int i;
         for(i=0;i<input.length();i++) {
-            if(checkType(input.charAt(i)) == 0) {
+            if(checkCharType(input.charAt(i)) == 0) {
                 if(input.length() > i+2 && input.charAt(i+1) == 'o' && input.charAt(i) == input.charAt(i+2)) {
                     i+=2;
                 }
@@ -50,7 +50,7 @@ public class LanguageInterpreter {
         String temp="";
         for(int i=0;i<input.length();i++) {
             temp+=input.charAt(i);
-            if(checkType(input.charAt(i)) == 0) {
+            if(checkCharType(input.charAt(i)) == 0) {
                 if(input.length() > i+2 && input.charAt(i+1) == 'o' && input.charAt(i) == input.charAt(i+2)) {
                     i+=2;
                 }
@@ -66,7 +66,7 @@ public class LanguageInterpreter {
         String temp="";
         for(int i=0;i<input.length();i++) {
             temp+=input.charAt(i);
-            if(checkType(input.charAt(i)) == 0) {
+            if(checkCharType(input.charAt(i)) == 0) {
                 temp+='o';
                 temp+=input.charAt(i);
             }
