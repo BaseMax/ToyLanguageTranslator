@@ -20,12 +20,12 @@ public class LanguageInterpreter {
                 case 'o':
                 case 'u':
                 case 'i':
-                    return 1;
+                    return 1;// return false;
                 default:
-                    return 0;
+                    return 0;// return true;
             }
         }
-        return -1;
+        return -1;// return false;
     }
 
     public static Boolean isValid(String input) {
